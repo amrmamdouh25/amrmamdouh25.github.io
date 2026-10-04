@@ -50,6 +50,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .job ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
 .job .when{color:var(--muted);font-size:14px;white-space:nowrap}
 
-.hero-grid{display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:center}
-.portrait{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:28px;border:2px solid var(--accent);display:block}
-@media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:28px}.portrait{max-width:220px;order:-1}}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(130px,28vw,300px);gap:clamp(20px,4vw,48px);align-items:center}
+.hero-text{grid-column:1;grid-row:1}
+.portrait{grid-column:2;grid-row:1;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:24px;border:2px solid var(--accent);display:block}
+@media(max-width:480px){.hero-grid{grid-template-columns:minmax(0,1fr) 110px;gap:16px}.portrait{border-radius:16px}}
