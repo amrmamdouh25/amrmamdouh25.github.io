@@ -1,0 +1,51 @@
+:root{--bg:#0a1020;--surface:#121a30;--line:#223052;--text:#e8edf8;--muted:#9aa8c7;--accent:#38bdf8;--accent-ink:#04121f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-weight:800;text-decoration:none;letter-spacing:.2px}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600}
+nav a:hover,nav a[aria-current]{color:var(--text)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.hero{padding:88px 0 64px}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:999px;color:var(--muted);font-size:14px}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#34d399}
+h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.1;margin:22px 0 14px;font-weight:800}
+h2{font-size:clamp(1.6rem,3.5vw,2.1rem);margin:0 0 10px;line-height:1.2}
+h3{margin:0 0 6px;font-size:1.1rem}
+.role{font-size:1.2rem;font-weight:700;color:var(--accent);margin:0 0 10px}
+.lead{max-width:60ch;color:var(--muted);font-size:1.1rem;margin:0 0 30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:1px solid var(--line);margin:0 10px 10px 0}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn:hover{border-color:var(--accent)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.sub{color:var(--muted);max-width:60ch;margin:0 0 28px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card p{margin:0;color:var(--muted)}
+.card .tools{margin-top:14px;font-size:14px;color:var(--accent)}
+.card a.more{display:inline-block;margin-top:14px;color:var(--accent);font-weight:700;text-decoration:none}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);padding:7px 14px;border-radius:999px;font-size:14px;font-weight:600}
+.job{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job p{margin:0;color:var(--muted)}
+.cta{text-align:center}
+.cta .sub{margin:0 auto 24px}
+.proj{padding:40px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0}
+.proj ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.cols{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:18px}
+.cols h3{color:var(--text)}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.contact-list a{color:var(--accent);font-weight:700}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+@media(max-width:560px){nav a{margin-left:14px}.hero{padding-top:56px}}
+.shot{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);margin:0 0 16px}
+.pair{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:8px}
+.pair .shot{margin:0}
+.job ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.job .when{color:var(--muted);font-size:14px;white-space:nowrap}
